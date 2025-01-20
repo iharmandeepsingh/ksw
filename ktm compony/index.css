@@ -1,0 +1,14 @@
+.nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.2rem;
+    border: 1em;
+    border-color:aquamarine;
+    border-radius: 1em;
+    background-color: aqua;
+
+}
+
+@media (max-width-768) {
+    
+}
