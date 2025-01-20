@@ -1,0 +1,27 @@
+*{
+    background-color: rgb(255, 255, 255);
+}
+
+.subheading{
+    color: rgb(0, 204, 255);
+}
+
+#heading-underline{
+    margin-top: -0.5rem;
+    margin-bottom: 1.5rem;
+    height: 0.3rem;
+    width: 3rem;
+    background-color: rgb(129, 230, 255);
+}
+
+.para{
+    font-weight: lighter;
+}
+
+#info{
+  height: auto;
+  width: auto;
+  margin-left: 12%; 
+  margin-right: 12%; 
+  
+}
