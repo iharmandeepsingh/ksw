@@ -1,14 +1,58 @@
-.nav{
-    display: flex;
-    justify-content: space-between;
-    padding: 0.2rem;
-    border: 1em;
-    border-color:aquamarine;
-    border-radius: 1em;
-    background-color: aqua;
+@media (max-width: 768px){
+    .container {
+        position: relative;
+        display: inline-block;
+        margin: 20px;
+      }
+      
+      /* Style for the button */
+      .button:before {
+        background-color: #007BFF;
+        color: white;
+        padding: 10px 20px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+      }
+      
+      .button:hover {
+        background-color: #0056b3;
+      }
+      
+      /*for img/
+      
+      /* Style for the dropdown content */
+      .nav {
+        display: none; /* Initially hidden */
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 200px;
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+        padding: 10px;
+        border-radius: 5px;
+        z-index: 1;
+      }
+      
+      /* Show dropdown content on hover */
+      .container:hover .nav {
+        display: block;
+      }
+      
+      /* Style for the dropdown content text */
+       .navigation ul li{
+        margin: 0;
+        padding: 5px 0;
+        color: #333;
+      }
+      
+      .navigation ul li:hover {
+        background-color: #ddd;
+        border-radius: 3px;
+      }
 
 }
 
-@media (max-width-768) {
-    
-}
+
+
