@@ -2,7 +2,13 @@
     .container {
         position: relative;
         display: inline-block;
-        margin: 20px;
+        width: 100%;
+        border: 5px;
+        border-radius: 2px;
+        border-color: aquamarine;
+        border-style: solid;
+        background-color: aquamarine;
+
       }
       
       /* Style for the button */
@@ -13,38 +19,61 @@
         font-size: 16px;
         border: none;
         cursor: pointer;
-        border-radius: 5px;
-        transition: background-color 0.3s;
+        border-radius: 10px;
+        transition: background-color 0.7s;
       }
       
       .button:hover {
         background-color: #0056b3;
       }
+      .button::after{
+        display: none;
+      }
+      /*for img*/
+      .img {
+        width: 40px;
+        height: 40px;
+      }
       
-      /*for img/
+      
       
       /* Style for the dropdown content */
       .nav {
         display: none; /* Initially hidden */
         position: absolute;
         background-color: #f9f9f9;
-        min-width: 200px;
+        width: 100%;
         box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-        padding: 10px;
-        border-radius: 5px;
+        padding-top: 10px;
+        font-weight: bolder;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         z-index: 1;
+        list-style-type: none;
+       
       }
-      
+      .tag{   
+        text-decoration: none; 
+       font-size: x-large;
+        padding: 10px 15px; /* Add some padding */
+        border-radius: 5px; /* Rounded corners */
+        text-decoration: none; /* Remove underline */
+        transition: background-color 0.7s ease,;
+      }
       /* Show dropdown content on hover */
       .container:hover .nav {
         display: block;
       }
-      
+
+      .container::after.nav{
+        display: none;
+      }
       /* Style for the dropdown content text */
        .navigation ul li{
         margin: 0;
-        padding: 5px 0;
+        padding: 8px 0;
         color: #333;
+        list-style-type: none;
+        
       }
       
       .navigation ul li:hover {
@@ -54,5 +83,39 @@
 
 }
 
+@media (min-width :769px){
+    .container {
+        width: 100%;
+       padding: 7px;
+        border-color: aqua;
 
+        border-radius: 3px;
+        background-color: aquamarine;
+       margin-inline-end: auto;
+    }
+    .img{
+     display: none;
+    }
+    .button{
+        display: none;
+    }
+    .tag{
+        font-size: medium;
+         border-radius: 5px; /* Rounded corners */
+         text-decoration: none; /* Remove underline */
+         transition: background-color 0.7s ease,;
+        
+
+    }
+    .nav ul{
+        
+        display: flex;
+        font-weight: bolder;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .nav ul li{
+      
+        list-style-type: none;
+    }
+}
 
