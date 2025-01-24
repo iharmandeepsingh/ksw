@@ -7,7 +7,7 @@
         border-radius: 2px;
         border-color: aquamarine;
         border-style: solid;
-        background-color: aquamarine;
+        background-color: rgb(39, 148, 216);;
 
       }
       
@@ -86,12 +86,12 @@
 @media (min-width :769px){
     .container {
         width: 100%;
-       padding: 7px;
+        padding: 1px;
         border-color: aqua;
-
         border-radius: 3px;
-        background-color: aquamarine;
-       margin-inline-end: auto;
+        background-color: rgb(39, 148, 216);;
+   
+     
     }
     .img{
      display: none;
@@ -104,18 +104,123 @@
          border-radius: 5px; /* Rounded corners */
          text-decoration: none; /* Remove underline */
          transition: background-color 0.7s ease,;
-        
+      color: white;
 
     }
     .nav ul{
-        
+      
         display: flex;
+       margin-left: 15%;
+        position:relative ;
         font-weight: bolder;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
     .nav ul li{
       
+      margin: 0.2rem 1.3rem;
         list-style-type: none;
+    }
+    .hr{
+      display: none;
     }
 }
 
+@media (max-width: 768px) {
+  .footer {
+      position: absolute;
+    
+      display: block;
+      width: 100%;
+      position: relative;
+      top: 80rem;
+      border: 5px;
+      border-radius: 2px;
+      border-color: aquamarine;
+      border-style: solid;
+      background-color: rgb(39, 148, 216);
+      padding: 15px;
+      text-align: center;
+      color: white;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .footer .row {
+      display: block;
+  }
+
+  .footer .row > div {
+      margin-bottom: 20px;
+  }
+
+  .footer h3,
+  .footer h2 {
+      color: white;
+  }
+
+  .footer a {
+      text-decoration: none;
+      color:white;
+      transition: color 0.7s;
+  }
+
+  .footer a:hover {
+      color:white;
+  }
+
+  .footer ul {
+      padding: 0;
+      list-style-type: none;
+  }
+
+  .footer ul li {
+      padding: 5px 0;
+  }
+  
+}
+
+@media (min-width: 769px) {
+  .footer {
+      width: 100%;
+      position: relative;
+     top: 95rem;
+      background-color: rgb(39, 148, 216);
+      padding: 20px;
+      border-radius: 3px;
+      color: white;
+  }
+
+  .footer .row {
+      display: flex;
+      justify-content: space-between;
+  }
+
+  .footer .row > div {
+      flex: 1;
+      margin-right: 20px;
+  }
+
+  .footer h3,
+  .footer h2 {
+      font-size: 1.5rem;
+      color: white;
+  }
+
+  .footer a {
+      text-decoration: none;
+      color: aquamarine;
+      transition: color 0.7s;
+  }
+
+  .footer a:hover {
+      color: white;
+  }
+
+  .footer ul {
+      padding: 0;
+      list-style-type: none;
+  }
+
+  .footer ul li {
+      margin-bottom: 10px;
+  }
+}
