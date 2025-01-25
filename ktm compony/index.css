@@ -411,6 +411,19 @@ button:hover {
 
   }
 
+  .footer .Latestnews{
+    padding-left: 7%;
+    padding-right: 8%;
+  }
+
+  .footer .Product-range{
+    padding-right: 2%;
+  }
+
+  .footer .Get-in-Touch{
+    padding-right: 5%;
+  }
+
   .footer .row {
       display: flex;
       justify-content: space-between;
@@ -429,12 +442,12 @@ button:hover {
 
   .footer a {
       text-decoration: none;
-      color: aquamarine;
+      color: rgb(229, 241, 237);
       transition: color 0.7s;
   }
 
-  .footer a:hover {
-      color: white;
+  .footer  a:hover {
+      color: rgb(35, 34, 34);
   }
 
   .footer ul {
@@ -554,6 +567,29 @@ button:hover {
 
   
 }
+
+/*back to top button*/
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size:xx-large;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 15px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  display: none;  /*Hidden by default*/
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.back-to-top:hover {
+  background-color: #262826;
+  transform: scale(1.1);
+}
+
 
 
 
