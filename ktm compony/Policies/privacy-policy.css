@@ -1,0 +1,80 @@
+.subheading{
+    color:rgb(39, 148, 216);
+}
+
+#heading-underline{
+    margin-top: -0.5rem;
+    margin-bottom: 1.5rem;
+    height: 0.3rem;
+    width: 3rem;
+    background-color:rgb(39, 148, 216);
+}
+
+.para{
+    font-weight: lighter;
+    text-align: justify;
+
+}
+
+.banner{
+    width: 100%;
+}
+
+
+#info{
+  height: auto;
+  width: auto;
+  margin-left: 7%;  
+  width: 75%;
+  
+}
+.footers {
+    display: block;
+    width: 100%;
+    position: relative;
+    top: 2rem;
+    border: 5px;
+    border-radius: 2px;
+    border-style: solid;
+    background-color: rgb(39, 148, 216);
+    padding: 10px;
+    text-align: center;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.footers .row {
+    display: block;
+}
+
+.footers .row > div {
+    margin-bottom: 20px;
+}
+
+.footers h3,
+.footers h2 {
+    color: white;
+}
+
+.footers a {
+    text-decoration: none;
+    color:white;
+    transition: color 0.7s;
+}
+
+.footers a:hover {
+    color:white;
+}
+
+.footers ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+.footers ul li {
+    padding: 1px 0;
+}
+
+.general-info{
+    display: none;
+}
