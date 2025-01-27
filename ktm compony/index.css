@@ -156,9 +156,9 @@ button:hover {
 
 /*back to top button*/
 .back-to-top {
-  position: absolute;
+  position: relative;
   bottom: 20px;
-  right: 10px;
+  right:  45%;
   font-size:xx-large;
   color: white;
   border: none;
@@ -429,7 +429,6 @@ margin-top: 0% 40%;
     gap: 1rem;
 }
 .logo-text {
-  
   margin-top: 10%;
   font-size: 1.2rem;
   font-weight: bold;
@@ -437,6 +436,9 @@ margin-top: 0% 40%;
   margin: 0;
   position: relative;
   left: 2.5rem;
+}
+.general-info{
+  display: none;
 }
 }
 @media (min-width: 768px) {
@@ -615,6 +617,13 @@ margin-top: 0% 40%;
   position: relative;
   left: 4rem;
   top: 1%;
+}
+.general-info {
+  display: flex;
+  gap: 2rem;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 }
