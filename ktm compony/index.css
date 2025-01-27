@@ -237,7 +237,7 @@ margin-top: 0% 40%;
  #main-container{
   width: 100%;
  }
- 
+
   /* Header*/
   .container {
     display: inline-block;
@@ -381,16 +381,16 @@ margin-top: 0% 40%;
   
 
   .image-sec{
-    min-width: 100%;
+    min-width: 50%;
    
   }
   
   .image-sec-content{
     width: 24em;
     height: 18em;
-    position: relative;
+    position: absolute;
     bottom: -70%;
-    right: 50%;
+    right: 10%;
    
     
   }
