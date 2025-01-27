@@ -167,9 +167,9 @@ button:hover {
 
 /*back to top button*/
 .back-to-top {
-  position: relative;
+  position: absolute;
   bottom: 20px;
-  right: 20px;
+  right: 10px;
   font-size:xx-large;
   color: white;
   border: none;
@@ -328,7 +328,7 @@ margin-top: 0% 40%;
       display: block;
       width: 100%;
       position: relative;
-      top: 30rem;
+      top: 2rem;
       border: 5px;
       border-radius: 2px;
       border-style: solid;
@@ -378,23 +378,9 @@ margin-top: 0% 40%;
     padding: 0.5%;
     min-width: 50%;
   }
-  
-
-  .image-sec{
-    min-width: 50%;
-   
-  }
-  
-  .image-sec-content{
-    width: 24em;
-    height: 18em;
-    position: absolute;
-    bottom: -70%;
-    right: 10%;
-   
-    
-  }
-  
+.image-sec-content{
+  display: none;
+}
   .about-heading {
     font-size: 1.8em;
     font-weight: bold;
@@ -417,7 +403,7 @@ margin-top: 0% 40%;
     text-align: start;
     font-size: 0.9em;
     margin-top: -1em;
-    width: 200%;
+    width: 100%;
     text-align:start;
   }
   
