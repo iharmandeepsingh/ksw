@@ -440,6 +440,11 @@ margin-top: 0% 40%;
 .general-info{
   display: none;
 }
+.img1 {
+  width: 100%; /* Responsive images */
+  height: 100%; /* Maintain aspect ratio */
+}
+
 }
 @media (min-width: 768px) {
   #main-container{
