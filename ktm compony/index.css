@@ -182,10 +182,12 @@ button:hover {
   border-style: solid;
   background-color: #ffffff;
   overflow: hidden;
+  background-color: #f6f6f6;
 }
 #Our-Client{
 position: relative;
-top: 20%;
+top: 25%;
+font-size: large;
 }
 
 #hr{
@@ -201,8 +203,9 @@ margin-top: 0% 40%;
   display: flex;
   overflow: hidden; /* Hide images when they move out of view */
  justify-items: center;
- animation: slideLeftToRight 5s linear infinite;
+ animation: slideLeftToRight 10s linear infinite;
  transition: ease-in-out;
+
 }
 
 .company-image {

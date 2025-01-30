@@ -51,5 +51,18 @@ document.querySelector('#Client')
 
 //for client images
 
+const scrollToClientLink = document.getElementById('Client');
+    
+    // Add event listener to the link
+    scrollToClientLink.addEventListener('click', function(event) {
+      event.preventDefault(); // Prevent the default link behavior (navigation)
+      
+      // Smoothly scroll to the client section
+      document.querySelector('.forcleint').scrollIntoView({ behavior: 'smooth' });
+    });
 
-
+    // Check if the page is loaded with a hash in the URL
+    if (window.location.hash === "#forcleint") {
+      // If the page is loaded with the #client hash, scroll to the section smoothly
+      document.querySelector('.forcleint').scrollIntoView({ behavior: 'smooth' });
+    }
