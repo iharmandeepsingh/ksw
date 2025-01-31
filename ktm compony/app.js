@@ -53,16 +53,34 @@ document.querySelector('#Client')
 
 const scrollToClientLink = document.getElementById('Client');
     
-    // Add event listener to the link
+    // Wait for the DOM to be fully loaded
+// Wait for the DOM to be fully loaded
+document.addEventListener('DOMContentLoaded', function () {
+  const scrollToClientLink = document.getElementById('Client');
+
+  // Event listener for the 'Client' link to scroll to the section
+  if (scrollToClientLink) {
     scrollToClientLink.addEventListener('click', function(event) {
       event.preventDefault(); // Prevent the default link behavior (navigation)
-      
-      // Smoothly scroll to the client section
-      document.querySelector('.forcleint').scrollIntoView({ behavior: 'smooth' });
-    });
 
-    // Check if the page is loaded with a hash in the URL
-    if (window.location.hash === "#forcleint") {
-      // If the page is loaded with the #client hash, scroll to the section smoothly
-      document.querySelector('.forcleint').scrollIntoView({ behavior: 'smooth' });
+      const targetElement = document.querySelector('.forcleint');
+      // Check if the target element exists before attempting to scroll
+      if (targetElement) {
+        targetElement.scrollIntoView({ behavior: 'smooth' });
+      } else {
+        console.warn('Element .forcleint not found.');
+      }
+    });
+  }
+
+  // Check if the page is loaded with a hash in the URL
+  if (window.location.hash === "#forcleint") {
+    // If the page is loaded with the #forcleint hash, scroll to the section smoothly
+    const targetElement = document.getElementById('forcleint');
+    if (targetElement) {
+      targetElement.scrollIntoView({ behavior: 'smooth' });
+    } else {
+      console.warn('Element .forcleint not found on page load.');
     }
+  }
+});
